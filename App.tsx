@@ -3,14 +3,13 @@ import { View, Text, TextInput, Button, StyleSheet, ScrollView } from 'react-nat
 import { initializeApp } from '@firebase/app';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from '@firebase/auth';
 
-
 const firebaseConfig = {
-  apiKey: "YOUR - apiKey",
-  authDomain: "YOUR - authDomain",
-  projectId: "YOUR - projectId",
-  storageBucket: "YOUR - storageBucket",
-  messagingSenderId: "YOUR - messagingSenderId",
-  appId: "YOUR - appId",
+  apiKey: "AIzaSyBXc7srTZ9TmKXppLY2t_Qshwv3wqZcZXo",
+  authDomain: "fir-auth-95cc7.firebaseapp.com",
+  projectId: "fir-auth-95cc7",
+  storageBucket: "fir-auth-95cc7.appspot.com",
+  messagingSenderId: "143567115148",
+  appId: "1:143567115148:web:938991a905d5e5f7a87ca9",
   measurementId: "YOUR - measurementId"
 };
 
@@ -58,7 +57,7 @@ const AuthenticatedScreen = ({ user, handleAuthentication }) => {
     </View>
   );
 };
-export default App = () => {
+const App = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [user, setUser] = useState(null); // Track user authentication state
@@ -162,3 +161,5 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
 });
+
+export default App;
