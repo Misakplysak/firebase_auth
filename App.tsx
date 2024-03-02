@@ -49,7 +49,6 @@ const AuthScreen = ({ email, setEmail, password, setPassword, isLogin, setIsLogi
   );
 }
 
-
 const AuthenticatedScreen = ({ user, handleAuthentication }) => {
   return (
     <View style={styles.authContainer}>
@@ -59,6 +58,7 @@ const AuthenticatedScreen = ({ user, handleAuthentication }) => {
     </View>
   );
 };
+
 const App = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
